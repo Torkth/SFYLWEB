@@ -26,5 +26,11 @@ namespace SFYL.Controllers
 
             return View();
         }
+
+        public ActionResult ContactDetails(string name)
+        {
+            ViewBag.Message = name;
+            return View("ContactDetails/" + name);   
+        }
     }
 }
